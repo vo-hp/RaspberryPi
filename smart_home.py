@@ -20,7 +20,7 @@ ADAFRUIT_IO_USERNAME = 'Buu_1911'
 aio = Client(ADAFRUIT_IO_USERNAME, ADAFRUIT_IO_KEY)
 
 try: # if we have a 'digital' feed
-    digital = aio.feeds('smart-home’)
+    digital = aio.feeds('smart-home')                           
 except RequestError: # create a digital feed
     feed = Feed(name="smart-home")
     digital = aio.create_feed(feed)
